@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en"  xmlns:th="http://www.thymeleaf.com" th:replace="~{normal/base::layout(~{::section})}">
+<head>
+    <meta charset="UTF-8">
+    <title>user Dashboard</title>
+</head>
+<body>
+    <section>
+        <div class="container">
+            <div class="card">
+                <div class="card-body">
+                    <h1 class ="text-center">Welcome to Smart Contact Manager!!!</h1>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="card">
+                <div class="card-body text-center my-5">
+                    <h1 class ="text-center mt-3 text-secondary font-italic font-weight-light">Start Adding Your Contact in cloud...</h1>
+                    <a th:href="@{/api/user/add-contact}"><button class="btn bg-primary mt-4 btn-sm text-uppercase">Add New Contact</button></a>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
